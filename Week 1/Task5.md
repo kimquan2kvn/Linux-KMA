@@ -195,7 +195,7 @@ case $n in
 esac
 ```
 
-![image](https://user-images.githubusercontent.com/54978467/134820337-cf36dad2-0731-4cf6-96e6-375e79f98b42.png)
+![image](https://user-images.githubusercontent.com/54978467/134820440-8a989b35-da75-47ee-a0c6-34b00848fddd.png)
 
 ### g. Hàm
 
