@@ -31,7 +31,19 @@
   ![image](https://user-images.githubusercontent.com/54978467/134771254-da3a4ce4-37e2-46f5-831f-e32ace3b7a3e.png)
 
 ## Đặt lịch chạy định kỳ
+`crontab` là 1 tính năng trong Linux thực hiện chế độ sắp xếp tự động các chương trình, ứng dụng và kích hoạt chúng tại 1 thời điểm nhất định trong hệ thống.
+  - Cài đặt crontab: `sudo apt-get install cron`
+  - Khởi động dịch vụ ‘crond‘ lên: `service crond start`
+  - Để hiển thị danh sách lệnh crontab: `crontab -u <username> -l`
+  - Mở trình editor chỉnh sửa file crontab:`crontab -e`
+  - Ví dụ chạy một job nào đó vào 3 giờ chiều, mỗi thứ Ba:
+  ![image](https://user-images.githubusercontent.com/54978467/134792272-19e703f2-1a81-4429-8174-72452c891a6b.png)
   
+  - Note: 
+      - Biến SHELL chỉ định shell để sử dụng khi các câu lệnh được thực thi.
+      - Biến MAILTO đặt địa chỉ mail nhận các kết quả của cron job.
+      - Dòng thứ ba có nhiệm vụ thiết lập PATH cho môi trường.
+
 ## Phân quyền
 Với 1 file/folder trong linux sẽ có 3 quyền cơ bản:
   - R (read) - với file thì có thể xem được nó, với thư mục thì có thể show được các thành phần ở trong đó.
