@@ -170,6 +170,8 @@ fi
   
 ### g. Hàm
 
-### h. Các chương trình bên ngoài
+### h. Chuỗi và mảng
 
-### h. Viết 1 file bash
+### i. Các chương trình bên ngoài
+
+### k. Viết 1 file bash
