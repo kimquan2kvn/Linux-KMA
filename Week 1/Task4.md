@@ -52,6 +52,9 @@ Sử dụng lệnh `chmod` để phân quyền:
 
 Ví dụ phân quyền thực thi file bash:
   ![image](https://user-images.githubusercontent.com/54978467/134791397-a1d5ea47-773d-4548-8156-2c3ff65a301c.png)
+  
+**Note:** Thay đổi owner cho tập tin và thư mục:
+Ví dụ bạn muốn set lại owner cho text1.txt với owner mới là user1: `chown user1 text1.txt`
 
   
 
