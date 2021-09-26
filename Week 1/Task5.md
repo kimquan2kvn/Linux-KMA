@@ -152,6 +152,9 @@ fi
   ![image](https://user-images.githubusercontent.com/54978467/134815342-2271f8b5-b26b-4491-ab14-081630f17c39.png)
   
   Vì giá trị 4 khớp với điều kiện để continue nên nó nhảy qua giá trị 4
+  
+#### Vòng lặp while
+  - **Vòng lặp while**
 ### f. Hàm
 
 ### g. Viết 1 file bash
