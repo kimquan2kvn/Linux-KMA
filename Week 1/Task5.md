@@ -198,7 +198,17 @@ esac
 ![image](https://user-images.githubusercontent.com/54978467/134820440-8a989b35-da75-47ee-a0c6-34b00848fddd.png)
 
 ### g. Hàm
+Chúng ta cần hiểu cách tạo hàm và gọi hàm
+```bash
+#!/bin/bash
+Tinh_s() {
+dientich=$(($1*$2))
+echo "Dien tich la : $dientich"
+}
+Tinh_s 30 20 
+```
 
 ### h. Các chương trình bên ngoài
+
 
 ### i. Viết 1 file bash
