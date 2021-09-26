@@ -155,6 +155,16 @@ fi
   
 #### Vòng lặp while
   - **Vòng lặp while**
+  ```bash
+  #!/bin/bash
+  input = hello
+  while [ "$input" != "bye" ]
+  do
+    echo "Nhap nhung gi ban muon (bye to quit)"
+    read input
+    echo "Ban vua nhap: $input "
+  done
+  ```
 ### f. Hàm
 
 ### g. Viết 1 file bash
