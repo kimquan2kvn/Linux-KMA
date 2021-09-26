@@ -18,7 +18,7 @@ Variable (hay biến) chỉ các ô nhớ được khai báo cụ thể.
 Để khai báo một biến, ta sử dụng ký hiệu equal `=` đặt giữa tên và giá trị của biến (không được đặt bất cứ dấu *space* nào ở trước hoặc sau `=`.
 
 Để truy cập tới một biến, ta sử dụng ký hiệu dollar `$` ở ngay trước tên biến đó.
-```
+```bash
 n=10
 echo $n
 ```
@@ -28,7 +28,7 @@ Câu lệnh `read`
 
 Câu lệnh `echo` để in ra văn bản, giá trị biến
 
-```
+```bash
 #!/bin/bash
 echo Ban ten la gi?
 read who
@@ -41,7 +41,7 @@ echo Username: $user Password: $pass
 ![image](https://user-images.githubusercontent.com/54978467/134796158-a829ac2d-7a1c-49d9-ab8f-820a682eb8af.png)
 
 ### c. Tính toán cơ bản
-```
+```bash
 #!/bin/bash
 a=10
 expr 10 + $a
@@ -101,7 +101,7 @@ if [conditional_1]; then
 fi
 ```
 Ví dụ:
-```
+```bash
 #!/bin/bash
 read -p 'Nhap a: ' a
 read -p 'Nhap b: ' b
