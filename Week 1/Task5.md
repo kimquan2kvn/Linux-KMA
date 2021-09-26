@@ -1,5 +1,5 @@
-## Linux 
-# 1. Cơ bản về Bash Scripting
+# Linux 
+## 1. Cơ bản về Bash Scripting
 Với những ai thường xuyên sử dụng các hệ điều hành Linux cho công việc thì việc thao tác với các dòng lệnh là điều cần thiết và rất quan trọng.
 Tuy nhiên bất kì ai đã, đang hoặc từng sử dụng Linux thì đều nhận ra các điều sau đây:
   - Các chương trình chỉ làm được một công việc đơn giản và không thể làm 2 công việc khác nhau trở lên.
@@ -13,9 +13,11 @@ Bash script là một loại ngôn ngữ kịch bản, bash script cũng có ri�
  
 `#! (shebang)`: dòng thông báo cho hệ điều hành biết file script này sẽ được thực thi bởi chương trình nào.
 
-**a. Variable trong Bash:**
+### a. Variable trong Bash
 Variable (hay biến) chỉ các ô nhớ được khai báo cụ thể.
 
 Để khai báo một biến, ta sử dụng ký hiệu equal `=` đặt giữa tên và giá trị của biến (không được đặt bất cứ dấu *space* nào ở trước hoặc sau `=`.
 
 Để truy cập tới một biến, ta sử dụng ký hiệu dollar `$` ở ngay trước tên biến đó.
+
+### b. Câu lệnh điều kiện
