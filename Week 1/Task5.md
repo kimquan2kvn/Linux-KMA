@@ -61,7 +61,7 @@ echo "3.4+7/8-(5.94*3.14)" | bc
 
 **Toán tử logic trong bash hơi khác ngôn ngữ khác, cần chú ý**
 
-![image](https://user-images.githubusercontent.com/54978467/134798412-18955b33-67b6-4acd-9d66-ce7c95f79f48.png)
+![image](https://user-images.githubusercontent.com/54978467/134814543-4c219f16-f288-440c-84cc-e4b27752fe1c.png)
 
 **Boolean Operations** gồm có
   - and - &&
@@ -115,7 +115,26 @@ fi
 ![image](https://user-images.githubusercontent.com/54978467/134799570-51a57d8d-eb04-4cac-8c39-c36f467a23d0.png)
 
 ### e. Vòng lặp
-
+#### Vòng lặp for
+  - **Vòng lặp for với 3 điều kiện**
+  ```
+  for (( EXP1; EXP2; EXP3 ))
+  do
+      command1
+      command2
+      command3
+  done
+  ```
+  
+  Một ví dụ đơn giản như sau:
+  
+  ```bash
+  #!/bin/bash
+  for (( i=1; i<=5; i++))
+  do
+        echo "Xin chao ban, $i"
+  done
+  ```
 ### f. Hàm
 
 ### g. Viết 1 file bash
