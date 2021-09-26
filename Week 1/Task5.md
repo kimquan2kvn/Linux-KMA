@@ -135,6 +135,23 @@ fi
         echo "Xin chao ban, $i"
   done
   ```
+  
+  - **Vòng for để bỏ qua hay continue loop**
+  ```
+  for I in 1 2 3 4 5
+  do
+    if [condition]
+  then
+    continue
+    fi
+    statement
+  done
+  ```
+  Ví dụ:
+  
+  ![image](https://user-images.githubusercontent.com/54978467/134815342-2271f8b5-b26b-4491-ab14-081630f17c39.png)
+  
+  Vì giá trị 4 khớp với điều kiện để continue nên nó nhảy qua giá trị 4
 ### f. Hàm
 
 ### g. Viết 1 file bash
