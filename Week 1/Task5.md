@@ -208,7 +208,8 @@ echo "Dien tich la : $dientich"
 Tinh_s 30 20 
 ```
 
-### h. Các chương trình bên ngoài
-
+### h. Một số lệnh hay dùng
+Chẳng hạn như `tr`, `grep`, `expr`, `cut`, `find`, `tee`.
 
 ### i. Viết 1 file bash
+
