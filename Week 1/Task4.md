@@ -64,6 +64,7 @@ Sử dụng lệnh `chmod` để phân quyền:
   Với o-owner, g - group, a - user other, r-read ,w-write, x-execute, add thêm quyền là '+', loại bỏ đi quyền là '-'.
 
 Ví dụ phân quyền thực thi file bash:
+
   ![image](https://user-images.githubusercontent.com/54978467/134791397-a1d5ea47-773d-4548-8156-2c3ff65a301c.png)
   
 **Note:** Thay đổi owner cho tập tin và thư mục:
