@@ -33,3 +33,25 @@
 ## Đặt lịch chạy định kỳ
   
 ## Phân quyền
+Với 1 file/folder trong linux sẽ có 3 quyền cơ bản:
+  - R (read) - với file thì có thể xem được nó, với thư mục thì có thể show được các thành phần ở trong đó.
+  - W (write) - với file thì có thể chỉnh sửa nội dung file, với thư mục thì có thể thêm bớt, xóa file ở trong đó.
+  - X (execute) - có quyền thực thi với file, thư mục
+
+Với 1 file/folder trong linux sẽ có 3 đối tượng sử dụng:
+  - O (owner): là chủ sở hữu của file thư mục, khi mới tạo file mặc định là là account tạo file.
+  - G (group): là 1 hoặc 1 nhóm account, khi mới tạo file mặc định là là account tạo file.
+  - U (user other) : là những account còn lại không thuộc 2 nhóm trên
+
+Sử dụng lệnh `chmod` để phân quyền:
+  - command thêm quyền execute cho group: `chmod g+x filename`
+  - command xóa quyền write cho group:`chmod g-x file_name`
+  - command thêm quyền write cho user other:`chmod a+x file_name`
+  - command thêm quyền execute cho group và user other:`chmod ga+x file_name`
+  Với o-owner, g - group, a - user other, r-read ,w-write, x-execute, add thêm quyền là '+', loại bỏ đi quyền là '-'.
+
+Ví dụ phân quyền thực thi file bash:
+  ![image](https://user-images.githubusercontent.com/54978467/134791397-a1d5ea47-773d-4548-8156-2c3ff65a301c.png)
+
+  
+
