@@ -12,4 +12,10 @@ Bash script là một loại ngôn ngữ kịch bản, bash script cũng có ri�
   - Viết tất cả các câu lệnh cần thiết vào một file Bash `(.sh)` và thực thi.
  
 `#! (shebang)`: dòng thông báo cho hệ điều hành biết file script này sẽ được thực thi bởi chương trình nào.
+
 **a. Variable trong Bash:**
+Variable (hay biến) chỉ các ô nhớ được khai báo cụ thể.
+
+Để khai báo một biến, ta sử dụng ký hiệu equal `=` đặt giữa tên và giá trị của biến (không được đặt bất cứ dấu *space* nào ở trước hoặc sau `=`.
+
+Để truy cập tới một biến, ta sử dụng ký hiệu dollar `$` ở ngay trước tên biến đó.
