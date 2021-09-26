@@ -167,11 +167,38 @@ fi
   ```
   
 ### f. Cấu trúc case
-  
+Mời bạn xem qua ví dụ sau để hiểu về cấu trúc case:
+```bash
+#!/bin/bash
+read -p "Nhap a: " a
+read -p "Nhap b: " b
+echo "1. Thuc hien phep cong"
+echo "2. Thuc hien phep tru"
+echo "3. Thuc hien phep nhan"
+read -p "Nhap lua chon cua ban : " n
+case $n in
+        1)
+                let c=$a+$b
+                echo "Ket qua la: $c"
+                ;;
+        2)
+                let c=$a-$b
+                echo "Ket qua la: $c"
+                ;;
+        3)
+                let c=$a*$b
+                echo "Ket qua la: $c"
+                ;;
+        *)
+                echo "Ban nhap sai roi. Ko the tinh duoc"
+                ;;
+esac
+```
+
+![image](https://user-images.githubusercontent.com/54978467/134820337-cf36dad2-0731-4cf6-96e6-375e79f98b42.png)
+
 ### g. Hàm
 
-### h. Chuỗi và mảng
+### h. Các chương trình bên ngoài
 
-### i. Các chương trình bên ngoài
-
-### k. Viết 1 file bash
+### i. Viết 1 file bash
