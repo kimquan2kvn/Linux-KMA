@@ -36,7 +36,7 @@
   - Khởi động dịch vụ ‘crond‘ lên: `service crond start`
   - Để hiển thị danh sách lệnh crontab: `crontab -u <username> -l`
   - Mở trình editor chỉnh sửa file crontab:`crontab -e`
-  - Ví dụ chạy một job nào đó vào 3 giờ chiều, mỗi thứ Ba:
+  - Ví dụ chạy một script nào đó vào 3 giờ chiều, mỗi thứ N:
   ![image](https://user-images.githubusercontent.com/54978467/134792272-19e703f2-1a81-4429-8174-72452c891a6b.png)
   
   - Note: 
