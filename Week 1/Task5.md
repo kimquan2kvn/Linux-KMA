@@ -165,6 +165,11 @@ fi
     echo "Ban vua nhap: $input "
   done
   ```
-### f. Hàm
+  
+### f. Cấu trúc case
+  
+### g. Hàm
 
-### g. Viết 1 file bash
+### h. Các chương trình bên ngoài
+
+### h. Viết 1 file bash
