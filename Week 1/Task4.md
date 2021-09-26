@@ -36,7 +36,7 @@
   - Khởi động dịch vụ ‘crond‘ lên: `service crond start`
   - Để hiển thị danh sách lệnh crontab: `crontab -u <username> -l`
   - Mở trình editor chỉnh sửa file crontab:`crontab -e`
-  - Ví dụ chạy một script nào đó vào 3 giờ chiều, mỗi thứ N:
+  - Ví dụ chạy một script nào đó vào 3 giờ chiều, mỗi thứ Năm h:
   ![image](https://user-images.githubusercontent.com/54978467/134792272-19e703f2-1a81-4429-8174-72452c891a6b.png)
   
   - Note: 
@@ -60,6 +60,7 @@ Sử dụng lệnh `chmod` để phân quyền:
   - command xóa quyền write cho group:`chmod g-x file_name`
   - command thêm quyền write cho user other:`chmod a+x file_name`
   - command thêm quyền execute cho group và user other:`chmod ga+x file_name`
+  
   Với o-owner, g - group, a - user other, r-read ,w-write, x-execute, add thêm quyền là '+', loại bỏ đi quyền là '-'.
 
 Ví dụ phân quyền thực thi file bash:
