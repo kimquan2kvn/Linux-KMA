@@ -1,7 +1,6 @@
 # Linux 
 ## 1. Cơ bản về Bash Scripting
-Với những ai thường xuyên sử dụng các hệ điều hành Linux cho công việc thì việc thao tác với các dòng lệnh là điều cần thiết và rất quan trọng.
-Tuy nhiên bất kì ai đã, đang hoặc từng sử dụng Linux thì đều nhận ra các điều sau đây:
+Bất kì ai đã, đang hoặc từng sử dụng Linux thì đều nhận ra các điều sau đây:
   - Các chương trình chỉ làm được một công việc đơn giản và không thể làm 2 công việc khác nhau trở lên.
   - Các chương trình phải hoạt động theo một thứ tự nhất định để thực hiện một công việc nào đó và nếu thay đổi thứ tự này sẽ dẫn đến việc xử lý công việc khác.
   - Có một số công việc phải làm với tất suất lớn và đôi khi là lặp đi lại trong thời gian ngắn.
