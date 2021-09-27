@@ -212,6 +212,16 @@ Tinh_s 30 20
 Chẳng hạn như `tr`, `grep`, `expr`, `cut`, `find`, `tee`.
 
 **grep** để tìm kiếm từ, chuỗi trong file, thư mục
+  - Cú pháp chung `grep options files`
+  - Các tùy chọn:
+  ```
+  -c: Đếm số dòng phù hợp với một mẫu. 
+  -h: Hiển thị các dòng phù hợp, nhưng không hiển thị tên tệp. 
+  -i: Bỏ qua trường hợp đối sánh. 
+  -l: Chỉ hiển thị danh sách tên tệp. 
+  -n: Hiển thị các dòng phù hợp với số dòng. 
+  -v: In tất cả các dòng không trùng với mẫu. 
+  ```
   - Tìm kiếm text đơn giản
   ```
   grep "test" test1.txt
@@ -232,6 +242,70 @@ Chẳng hạn như `tr`, `grep`, `expr`, `cut`, `find`, `tee`.
   ```
   grep -e text 1 -e text2 -e text3 file text
   ```
-
+**cut**
+  - Cú pháp chung: `cut OPTION... [FILE]...`
+  - Các tùy chọn: 
+  ```
+    -b, --bytes=LIST        # chỉ chọn các byte
+    -c, --characters=LIST   # chỉ chọn các ký tự
+    -d, --delimiter=DELIM   # được sử dụng làm dấu phân cách trường
+    -f, --fields=LIST       # chỉ chọn các trường trên mỗi dòng, in bất kỳ dòng nào không chứa ký tự phân tách
+    -s, --only-delimited    # không in các dòng không chứa dấu phân cách
+    --output-delimiter=STRING  # sử dụng STRING làm thay đổi đầu ra
+   ```
+  - Cắt các ký tự
+  ```
+  $ echo 'abcd' | cut -c 1-3
+  Output: abc
+  ```
+  - Cắt dựa trên các trường
+  ```
+  Giả sử có file test.txt như sau
+  Name  Age State
+  Quan  21  Hanoi
+  Sang  21  Hatay
+  Kim   22  Hanoi
+  cut -d '  ' -f 1 test.txt
+  output:
+  Name
+  Quan
+  Sang
+  Kim
+  ```
+  - Sửa đổi đầu ra
+  ```
+  cut -d '  ' -f 1,2 --output-delimiter = '-'
+  output:
+  Name  Age
+  Quan  -21
+  Sang  -21
+  Kim   -22
+  ```
+  
+**tr** để thay đổi, xóa các ký tự
+  - Ví dụ chuyển từ tab thành khoảng trắng: 
+  ```
+  echo "This    is    for    test" | tr -s [:space:]
+  This is for test
+  ```
 ### i. Viết 1 file bash
+```bash
+#!/bin/bash
+menu=(
+"Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
+"Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
+"He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
+"Ten CPU: `cat /proc/cpuinfo | grep -w "model name" |cut -d ':' -f2`"
+"Bit CPU: `lscpu | grep -w "CPU op-mode(s)" | cut -d ':' -f2`"
+"Toc do CPU `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
+"Dung luong o cung: `df -h /dev/sda1 --output=size|grep "G"`" 
+"Dung luong con lai: `df -h /dev/sda1 --output=avail|grep "G"`"
+"Dia chi ip: `ip addr |grep -w "inet"|cut -d '/' -f2 | tr -s ' '|cut -d ' ' -f3`"
+)
 
+for ((i=0;i<${#menu[@]};i++))
+do
+    echo -e ${menu[i]} 
+done
+```
+![image](https://user-images.githubusercontent.com/54978467/134838350-60188399-41bd-4f20-91a9-ebdc8606de44.png)
