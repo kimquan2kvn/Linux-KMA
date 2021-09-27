@@ -221,6 +221,8 @@ Chẳng hạn như `tr`, `grep`, `expr`, `cut`, `find`, `tee`.
   -l: Chỉ hiển thị danh sách tên tệp. 
   -n: Hiển thị các dòng phù hợp với số dòng. 
   -v: In tất cả các dòng không trùng với mẫu. 
+  -e exp: Chỉ định biểu thức với tùy chọn này. Có thể sử dụng nhiều lần. 
+  -f tệp: Lấy các mẫu từ một tệp. 
   ```
   - Tìm kiếm text đơn giản
   ```
