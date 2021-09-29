@@ -3,7 +3,7 @@
   
   ![image](https://user-images.githubusercontent.com/54978467/135122088-92982128-dcc5-4050-9ad5-bd1718354538.png)
   
-  Dùng lệnh `grep -w "NAME"` để tìm từ NAME, xác định vị trí cắt
+  Dùng lệnh `grep -w "NAME"` để tìm đến dòng ctừ NAME, xác định vị trí cắt
   ```
   cut d '=' -f 2 
   d là dấu phân cách trường ta thấy dấu '='
