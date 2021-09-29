@@ -15,14 +15,14 @@
   
   ```bash
   #!/bin/bash
-  echo"Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
-  echo"Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
-  echo"He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
-  echo"Ten CPU: `cat /proc/cpuinfo | grep -w "model name" |cut -d ':' -f2`"
-  echo"Bit CPU: `lscpu | grep -w "CPU op-mode(s)" | cut -d ':' -f2`"
-  echo"Toc do CPU `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
-  echo"Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
-  echo"Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
+  echo "Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
+  echo "Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
+  echo "He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
+  echo "Ten CPU: `cat /proc/cpuinfo | grep -w "model name" |cut -d ':' -f2`"
+  echo "Bit CPU: `lscpu | grep -w "CPU op-mode(s)" | cut -d ':' -f2`"
+  echo "Toc do CPU `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
+  echo "Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
+  echo "Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
   echo "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
 
   ```
