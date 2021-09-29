@@ -40,9 +40,16 @@
 
   echo -e "\nDanh sach tien trinh dang chay duoi quyen root: \n"
   ps -fU root |sort
+  
+  echo -e "\nDanh sach file ma other co quyen ghi: \n"
+  find -perm -o=r
 
-  echo -e "\nDanh sach cach port dang mo: \n"
+  ehco -e "\nDanh sach cac phan mem duoc cai dat tren he thong: \n"
+  apt list --installed
+  
+  echo -e "\nDanh sach cach port dang mo va cac tien trinh: \n"
   netstat | sort -n
+  
   ```
 
 # Bài 2 : Cron job
