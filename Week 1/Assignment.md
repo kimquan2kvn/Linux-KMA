@@ -23,6 +23,8 @@
   echo"Toc do CPU `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
   echo"Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
   echo"Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
+  echo "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
+
   ```
 
 # Bài 2 : Cron job
