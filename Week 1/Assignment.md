@@ -24,7 +24,8 @@
   echo "Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
   echo "Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
   echo "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
-
+  echo "Dia chi ip: `ip addr |grep -w "inet"|cut -d '/' -f2 | tr -s ' '|cut -d ' ' -f3`"
+  
   ```
 
 # Bài 2 : Cron job
