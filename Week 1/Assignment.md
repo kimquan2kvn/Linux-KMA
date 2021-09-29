@@ -16,17 +16,17 @@
   ```bash
   #!/bin/bash
   menu=(
-  echo "Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
-  echo "Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
-  echo "He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
-  echo "Ten CPU: `cat /proc/cpuinfo | grep -w "model name" |cut -d ':' -f2`"
-  echo "Bit CPU: `lscpu | grep -w "CPU op-mode(s)" | cut -d ':' -f2`"
-  echo "Toc do CPU `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
-  echo "Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
-  echo "Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
-  echo "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
-  echo "Dia chi ip: `ip addr |grep -w "inet"|cut -d '/' -f2 | tr -s ' '|cut -d ' ' -f3`"
-  echo "Gateway: `route -n | grep 'UG[ \t]' | awk '{print $2}'`"
+  "Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
+  "Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
+  "He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
+  "Ten CPU: `cat /proc/cpuinfo | grep -w "model name" |cut -d ':' -f2`"
+  "Bit CPU: `lscpu | grep -w "CPU op-mode(s)" | cut -d ':' -f2`"
+  "Toc do CPU: `lscpu | grep -w "CPU MHz"|cut -d ':' -f2` Mhz"
+  "Dung luong o cung: `df -h /dev/sda4 --output=size|grep "G"`" 
+  "Dung luong con lai: `df -h /dev/sda4--output=avail|grep "G"`"
+  "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
+  "Dia chi ip: `ip addr |grep -w "inet"|cut -d '/' -f2 | tr -s ' '|cut -d ' ' -f3`"
+  "Gateway: `route -n | grep 'UG[ \t]' | awk '{print $2}'`"
   )
   
   for ((i=0;i<${#menu[@]};i++))
@@ -34,8 +34,9 @@
       echo -e ${menu[i]} 
   done
   
-  users="Danh sach user:\n `cut -d : -f 1 /etc/passwd|sort`"
-  echo -e $users | tr [:space:] '\n'
+  users="`cut -d : -f 1 /etc/passwd|sort`"
+  echo "Danh sach user:"
+  echo $users | tr [:space:] '\n'
 
 
   ```
