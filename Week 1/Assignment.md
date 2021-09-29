@@ -15,6 +15,7 @@
   
   ```bash
   #!/bin/bash
+  menu=(
   echo "Ten may: `cat /etc/os-release | grep -w "NAME"|cut -d '=' -f2`"
   echo "Ban phan phoi: `cat /etc/os-release | grep -w "VERSION"|cut -d '=' -f2`"
   echo "He dieu hanh: `cat /proc/version |cut -d '=' -f2`"
@@ -26,6 +27,12 @@
   echo "Dia chi DNS: ` grep nameserver /etc/resolv.conf | cut -d ' ' -f 2`"
   echo "Dia chi ip: `ip addr |grep -w "inet"|cut -d '/' -f2 | tr -s ' '|cut -d ' ' -f3`"
   echo "Gateway: `route -n | grep 'UG[ \t]' | awk '{print $2}'`"
+  )
+  
+  for ((i=0;i<${#menu[@]};i++))
+  do
+      echo -e ${menu[i]} 
+  done
 
   ```
 
