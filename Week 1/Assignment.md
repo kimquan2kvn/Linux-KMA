@@ -38,7 +38,11 @@
   echo "Danh sach user:"
   echo $users | tr [:space:] '\n'
 
+  echo -e "\nDanh sach tien trinh dang chay duoi quyen root: \n"
+  ps -fU root |sort
 
+  echo -e "\nDanh sach cach port dang mo: \n"
+  netstat | sort -n
   ```
 
 # Bài 2 : Cron job
