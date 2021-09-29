@@ -290,6 +290,8 @@ Chẳng hạn như `tr`, `grep`, `expr`, `cut`, `find`, `tee`.
   echo "This    is    for    test" | tr -s [:space:]
   This is for test
   ```
+**Tham khảo: https://blog.knoldus.com/play-with-text-in-linux-grep-cut-awk-sed/**
+
 ### i. Viết 1 file bash
 ```bash
 #!/bin/bash
