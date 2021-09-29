@@ -33,6 +33,10 @@
   do
       echo -e ${menu[i]} 
   done
+  
+  users="Danh sach user:\n `cut -d : -f 1 /etc/passwd|sort`"
+  echo -e $users | tr [:space:] '\n'
+
 
   ```
 
