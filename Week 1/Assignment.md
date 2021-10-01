@@ -1,4 +1,4 @@
-# Bài 1: Shell script info.sh hiển thị các thông tin về hệ thống
+# 1: Shell script info.sh hiển thị các thông tin về hệ thống
   Kiểm tra phiên bản hệ điều hành Linux với lệnh `cat /etc/os-release`
   
   ![image](https://user-images.githubusercontent.com/54978467/135122088-92982128-dcc5-4050-9ad5-bd1718354538.png)
@@ -52,7 +52,7 @@
   
   ```
 
-# Bài 2 : Cron job
+# 2 : Cron job
   - Tạo cron job chạy định kỳ với thời gian chỉ định nhằm kiểm tra sự thay đổi của một folder.   
   - Kiểm tra xem có file nào trong folder được tạo mới (so với lần chạy trước theo lịch đã đặt) hay không? Nếu có thì in ra tên các file đó.   
   - Kiểm tra xem có file nào trong folder bị thay đổi (so với lần chạy trước theo lịch đã đặt) hay không? Nếu có thì in ra tên các file đó.   
