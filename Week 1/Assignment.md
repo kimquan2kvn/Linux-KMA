@@ -58,3 +58,5 @@
   - Kiểm tra xem có file nào trong folder bị thay đổi (so với lần chạy trước theo lịch đã đặt) hay không? Nếu có thì in ra tên các file đó.   
   - Kiểm tra xem có file nào trong folder bị xóa (so với lần chạy trước theo lịch đã đặt) hay không? Nếu có thì in ra tên các file đó.
   - Tất cả các các điều trên được lưu vào file .log tự định sẵn
+  https://www.decodingdevops.com/shell-script-to-check-for-new-files-in-a-directory/
+  https://unix.stackexchange.com/questions/24952/script-to-monitor-folder-for-new-files
