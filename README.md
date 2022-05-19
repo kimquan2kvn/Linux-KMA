@@ -1,1 +1,1 @@
-# Ổn tập Linux - KMA :anger:	
+# Ôn tập Linux - KMA :anger:	
